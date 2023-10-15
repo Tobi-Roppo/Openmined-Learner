@@ -1,0 +1,20 @@
+{
+  "name": "openmined-learner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobi-Roppo/Openmined-Learner.git"
+  },
+  "author": "Clifford Halasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tobi-Roppo/Openmined-Learner/issues"
+  },
+  "homepage": "https://github.com/Tobi-Roppo/Openmined-Learner#readme"
+}
