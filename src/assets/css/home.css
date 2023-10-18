@@ -72,8 +72,9 @@ nav .dropdown {
 nav li a {
   float: left;
   padding: 31px;
-  color: #fff; /* Added white color to the navigation links */
-  transition: color 0.3s; /* Added a smooth color transition */
+  color: #fff;
+  transition: color 0.3s;
+  z-index: 999;
 }
 
 nav li a:hover {
@@ -97,19 +98,22 @@ nav .dropdown ul {
   left: 0;
   top: 100%;
   background: #34495e;
-  padding: 20px 0;
+  padding: 0;
   border-bottom: 3px solid #34495e;
+  z-index: 999;
 }
 
 nav .dropdown li {
   background: #34495e;
+  z-index: 999;
 }
 
 nav .dropdown li a {
-  padding: 10px 35px;
+  padding: 10px 20px; /* Adjust the padding values */
   font-size: 13px;
   min-width: 200px;
-  color: #fff; /* Added white color to the dropdown links */
+  color: #fff;
+  z-index: 999;
 }
 
 nav .mega-dropdown {
@@ -121,6 +125,7 @@ nav .mega-dropdown {
   overflow: hidden;
   padding: 20px 35px;
   border-bottom: 3px solid #34495e;
+  z-index: 999;
 }
 
 nav li li a {
@@ -130,6 +135,7 @@ nav li li a {
   padding: 8px 10px;
   border-radius: 3px;
   font-size: 13px;
+  z-index: 999;
 }
 
 nav li li a:hover {

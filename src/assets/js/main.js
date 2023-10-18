@@ -338,3 +338,49 @@
       retina_detect: !0,
     });
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get card elements
+  const card1 = document.getElementById("card1");
+  const card2 = document.getElementById("card2");
+  const card3 = document.getElementById("card3");
+  const card4 = document.getElementById("card4");
+
+  // Get all the close buttons (x)
+  const closeButtons = document.querySelectorAll(".close");
+
+  // Function to open the modal for a specific card
+  function openModal(cardId, modalId) {
+    const card = document.getElementById(cardId);
+    const modal = document.getElementById(modalId);
+    card.addEventListener("click", function () {
+      modal.style.display = "block";
+    });
+  }
+
+  // Function to close the modal
+  function closeModal(modal) {
+    modal.style.display = "none";
+  }
+
+  // Add event listeners to open modals for each card
+  openModal("card1", "myModal1");
+  openModal("card2", "myModal2");
+  openModal("card3", "myModal3");
+  openModal("card4", "myModal4");
+
+  // Add click event listeners to close the modals
+  closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener("click", function () {
+      const modal = this.closest(".modal");
+      closeModal(modal);
+    });
+  });
+
+  // Add an event listener to the "Next" button to open myModal2
+  const nextButton = document.querySelector("#myModal1 .main-btn"); // Assuming this is the "Next" button in myModal1
+  nextButton.addEventListener("click", function () {
+    const modal2 = document.getElementById("myModal2");
+    modal2.style.display = "block";
+  });
+});
