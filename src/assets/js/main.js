@@ -384,3 +384,13 @@ document.addEventListener("DOMContentLoaded", function () {
     modal2.style.display = "block";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the card element
+  const card = document.getElementById("card");
+
+  // Add a click event listener to toggle the "flipped" class
+  card.addEventListener("click", function () {
+    card.classList.toggle("flipped");
+  });
+});
