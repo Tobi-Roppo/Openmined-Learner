@@ -1,9 +1,21 @@
+/* =======
+
+	Template Name: Basic
+	Author: UIdeck
+	Author URI: https://uideck.com/
+	Support: https://uideck.com/support/
+	Version: 1.1
+
+======== */
+/*===========================
+  COMMON css 
+===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #2e2d30;
+  color: #6A6972;
   overflow-x: hidden;
 }
 
@@ -35,14 +47,12 @@ button:focus,
   text-decoration: none;
   outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 a:focus,
 a:hover {
   text-decoration: none;
-  color: #ff5733; /* Change the text color on hover */
-  /* Add other styling as needed */
 }
 
 i,
@@ -68,7 +78,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #2e2e2e;
+  color: #2E2E2E;
   margin: 0px;
 }
 
@@ -81,7 +91,7 @@ h2 {
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 28px;
 }
 
 h4 {
@@ -89,7 +99,7 @@ h4 {
 }
 
 h5 {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 h6 {
@@ -104,10 +114,10 @@ ol {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #202022;
+  color: #6A6972;
   margin: 0px;
 }
 
@@ -140,14 +150,7 @@ p {
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#33c8c1),
-    color-stop(50%, #119bd2),
-    to(#33c8c1)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
   background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background-size: 200%;
 }
@@ -166,13 +169,7 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title .line {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe8464), to(#fe6e9a));
   background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
   width: 150px;
   height: 5px;
@@ -182,7 +179,7 @@ p {
 .section-title .sub-title {
   font-size: 18px;
   font-weight: 400;
-  color: #361cc1;
+  color: #361CC1;
   text-transform: uppercase;
 }
 
@@ -261,8 +258,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-animation: spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1)
-    infinite both;
+  -webkit-animation: spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: spinner-easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
@@ -286,13 +282,13 @@ p {
 
 .preloader .loader .spinner-circle {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   width: 200%;
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #361cc1 #361cc1 #e1e1e1;
+  border-color: #361CC1 #361CC1 #E1E1E1;
   border-radius: 50%;
   border-width: 6px;
 }
@@ -300,18 +296,16 @@ p {
 .preloader .loader .spinner-left .spinner-circle {
   left: 0;
   right: -100%;
-  border-right-color: #e1e1e1;
-  -webkit-animation: spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1)
-    infinite both;
+  border-right-color: #E1E1E1;
+  -webkit-animation: spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .preloader .loader .spinner-right .spinner-circle {
   left: -100%;
   right: 0;
-  border-left-color: #e1e1e1;
-  -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
-    both;
+  border-left-color: #E1E1E1;
+  -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
@@ -476,7 +470,7 @@ p {
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -487,8 +481,7 @@ p {
   padding: 10px 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .sticky .navbar {
     padding: 15px 0;
   }
@@ -537,8 +530,7 @@ p {
   top: -7px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -552,8 +544,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav {
     padding: 20px 30px;
   }
@@ -570,8 +561,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item {
     margin: 0;
   }
@@ -588,22 +578,19 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item a {
     display: inline-block;
     padding: 8px 0;
-    color: #2e2e2e;
+    color: #2E2E2E;
   }
 }
 
-.navbar-nav .nav-item a:hover,
-.navbar-nav .nav-item a.active {
-  color: #20e2d9;
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
+  color: #fe7a7b;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-btn {
     position: absolute;
     top: 50%;
@@ -615,14 +602,7 @@ p {
 
 .navbar-btn .main-btn {
   line-height: 45px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
   background-size: 200%;
 }
@@ -633,16 +613,15 @@ p {
 }
 
 .sticky .navbar-toggler .toggler-icon {
-  background-color: #2e2e2e;
+  background-color: #2E2E2E;
 }
 
 .sticky .navbar-nav .nav-item a {
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
-.sticky .navbar-nav .nav-item a.active,
-.sticky .navbar-nav .nav-item a:hover {
-  color: #20e2d9;
+.sticky .navbar-nav .nav-item a.active, .sticky .navbar-nav .nav-item a:hover {
+  color: #fe7a7b;
 }
 
 /*===== HEADER HERO =====*/
@@ -778,7 +757,7 @@ p {
 .single-logo img {
   max-width: 100%;
   -webkit-filter: grayscale(5);
-  filter: grayscale(5);
+          filter: grayscale(5);
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
@@ -787,7 +766,7 @@ p {
 .single-logo:hover img {
   opacity: 1;
   -webkit-filter: none;
-  filter: none;
+          filter: none;
 }
 
 /*===========================
@@ -841,7 +820,7 @@ p {
 .single-services .services-content .services-title a {
   font-size: 26px;
   font-weight: 700;
-  color: #2e2e2e;
+  color: #2E2E2E;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -859,7 +838,7 @@ p {
 }
 
 .single-services .services-content .services-title a:hover {
-  color: #361cc1;
+  color: #361CC1;
 }
 
 .single-services .services-content .text {
@@ -955,14 +934,7 @@ p {
 }
 
 .about-content .main-btn {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
   background-size: 200%;
   height: 50px;
@@ -1014,18 +986,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(54, 28, 193, 0.2)),
-    to(rgba(46, 130, 239, 0.2))
-  );
-  background: linear-gradient(
-    to right,
-    rgba(54, 28, 193, 0.2) 0%,
-    rgba(46, 130, 239, 0.2) 100%
-  );
+  background: -webkit-gradient(linear, left top, right top, from(rgba(54, 28, 193, 0.2)), to(rgba(46, 130, 239, 0.2)));
+  background: linear-gradient(to right, rgba(54, 28, 193, 0.2) 0%, rgba(46, 130, 239, 0.2) 100%);
 }
 
 .video-wrapper .video-icon a {
@@ -1047,9 +1009,7 @@ p {
   padding-left: 70px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px),
-  only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .counter-wrapper {
     padding-left: 0;
   }
@@ -1110,35 +1070,17 @@ p {
 }
 
 .counter-wrapper .single-counter.counter-color-1::before {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#33c8c1),
-    to(#119bd2)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#33c8c1), to(#119bd2));
   background: linear-gradient(#33c8c1 0%, #119bd2 100%);
 }
 
 .counter-wrapper .single-counter.counter-color-2::before {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fe8464),
-    to(#fe6e9a)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe8464), to(#fe6e9a));
   background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
 }
 
 .counter-wrapper .single-counter.counter-color-3::before {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#361cc1),
-    to(#2e82ef)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#361cc1), to(#2e82ef));
   background: linear-gradient(#361cc1 0%, #2e82ef 100%);
 }
 
@@ -1220,12 +1162,12 @@ p {
 }
 
 .subscribe-form input {
-  border: 2px solid #e1e1e1;
+  border: 2px solid #E1E1E1;
   height: 65px;
   padding: 0 30px;
   border-radius: 5px;
   width: 100%;
-  color: #2e2e2e;
+  color: #2E2E2E;
 }
 
 .subscribe-form input::-webkit-input-placeholder {
@@ -1264,7 +1206,7 @@ p {
 }
 
 .subscribe-form input:focus {
-  border-color: #361cc1;
+  border-color: #361CC1;
 }
 
 .subscribe-form button {
@@ -1276,14 +1218,7 @@ p {
   border-bottom-right-radius: 5px;
   height: 65px;
   line-height: 65px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
   background-size: 200%;
 }
@@ -1319,6 +1254,7 @@ p {
 .footer-area {
   background-position: top center;
   position: relative;
+  z-index: 5;
 }
 
 .footer-area::before {
@@ -1399,8 +1335,7 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .link-wrapper {
     padding: 0;
     padding-right: 50px;
@@ -1472,14 +1407,7 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fe8464),
-    color-stop(50%, #fe6e9a),
-    to(#fe8464)
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#fe8464), color-stop(50%, #fe6e9a), to(#fe8464));
   background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
   background-size: 200%;
   text-align: center;
@@ -1488,11 +1416,11 @@ p {
   transition: all 0.3s ease-out 0s;
   display: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .back-to-top:hover {
@@ -2223,21 +2151,6 @@ p {
   padding-bottom: 225px;
 }
 
-.card {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.card-body {
-  padding: 25px;
-  margin-top: 15px;
-}
-
-.active-link {
-  color: #20e2d9; /* Change the text color for the active link */
-  font-weight: bold; /* Apply a bold font to the active link */
-  /* Add any other styling you want for the active link */
-}
-
 .image-container {
   position: relative;
   overflow: hidden;
@@ -2299,4 +2212,55 @@ p {
 
 .card-img-top{
 width: 100%;
+}
+
+/* Styles for the modals */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  overflow: auto; /* Add this to allow scrolling within the modal */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px; /* Adjust the width to your desired card-like size */
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-height: 80%; /* Add this to limit the maximum height of the modal */
+  overflow-y: auto; /* Add this to allow vertical scrolling if content exceeds the height */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.open-cast-btn {
+  background-color: #3498db; /* Change this color to your preference */
+  color: #ffffff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px; /* Set a fixed width for all buttons */
+}
+
+.open-cast-btn:hover {
+  background-color: #2980b9; /* Change this color to your preference */
 }

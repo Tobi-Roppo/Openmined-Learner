@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning Resources</title>
+    <title>About</title>
     <link
       rel="shortcut icon"
       href="../assets/images/favicon.png"
@@ -48,10 +48,12 @@
             <a href="about.html">About</a>
           </li>
           <li class="dropdown active">
-            <a href="#">Learning Resources</a>
+            <a href="surfacemining.html">Learning Resources</a>
             <ul>
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
             </ul>
           </li>
           <li>
@@ -63,98 +65,27 @@
         </ul>
       </nav>
     </div>
-    <section id="surface-mining">
+    <section id="about">
+      <!--====== ABOUT PART START ======-->
       <div class="about-area pt-70">
         <div class="container mt-1">
           <div class="row">
-            <div>
+            <div class="col-lg-6">
               <div
-                class="mt-1 wow fadeInLeftBig"
+                class="about-content mt-1 wow fadeInLeftBig"
                 data-wow-duration="1s"
                 data-wow-delay="0.5s"
               >
                 <div class="section-title">
-                  <h3 class="title">Mechanical Extraction</h3>
+                  <h4 class="title">
+                    <span>Aqueous Extraction : Panning</span>
+                  </h4>
                 </div>
                 <!-- section title -->
-                <p class="text mt-5">
-                  <span>
-                    -A method in surface mining that employs mechanical
-                    processes in a dry environment to recover valuable ores,
-                    encompassing the specific mining methods of open pit mining,
-                    open cast mining, quarrying of dimension stone, highwall or
-                    auger mining.
-                  </span>
+                <p class="text">
+                  Panning Mining is a form of placer mining to extract gold/ore
+                  in a traditional way which utilizes a pan and water.
                 </p>
-              </div>
-              <!-- about content -->
-            </div>
-            <div>
-              <div
-                class="about-image text-center mt-5 wow fadeInRightBig"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="row">
-                  <div class="col">
-                    <div class="text-center">
-                      <a href="openpit.html" class="text-decoration-none">
-                        <div class="image-container">
-                          <img
-                            src="../assets/images/surface-mining/miner.gif"
-                            alt="Image 2"
-                            class="image"
-                          />
-                          <div class="overlay">
-                            <a href="openpit.html" class="text-decoration-none">
-                              <h4>Open Pit Mining</h4>
-                              <p>Click to see more</p>
-                              <!-- New message -->
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="mt-2">
-                        <a href="openpit.html" class="text-decoration-none">
-                          <h4>Open Pit Mining</h4>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="text-center">
-                      <a
-                        href="your-link-here.html"
-                        class="text-decoration-none"
-                      >
-                        <div class="image-container">
-                          <img
-                            src="../assets/images/surface-mining/miner.gif"
-                            alt="Image 2"
-                            class="image"
-                          />
-                          <div class="overlay">
-                            <a href="open-cast.html">
-                              <h4>Open Cast Mining</h4>
-                              <p>Click to see more</p>
-                              <!-- New message -->
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mt-2">
-                      <a
-                        href="your-link-here.html"
-                        class="text-decoration-none"
-                      >
-                        <h4>Open Cast Mining</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -169,6 +100,62 @@
                   <span class="toggler-icon"> </span>
                 </button>
               </div>
+              <!-- about content -->
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="about-image text-center mt-1 wow fadeInRightBig"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                <img
+                  src="../assets/images/surface-mining/miner.gif"
+                  alt="about"
+                />
+
+                <!-- Add this HTML for your modal -->
+
+                <!-- Your button with a class -->
+                <div class="button">
+                  <button
+                    class="open-cast-btn wow fadeInUp mt-4"
+                    id="openModal1"
+                  >
+                    Cycle Operation
+                  </button>
+                  <button
+                    class="open-cast-btn wow fadeInUp mt-1"
+                    id="openModal2"
+                    style="display: none"
+                  >
+                    Conditions
+                  </button>
+                  <button
+                    class="open-cast-btn wow fadeInUp mt-1"
+                    id="openModal3"
+                    style="display: none"
+                  >
+                    Characteristics
+                  </button>
+                </div>
+
+                <div id="myModal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close-modal" id="closeModal1">&times;</span>
+                    <h3>Explanation</h3>
+                    <p class="text mt-3">
+                      Gold panning is a basic, hands-on method to extract denser
+                      gold from soil or gravel by washing it in a shallow pan
+                      filled with sand and gravel. The pan is shaken in water,
+                      causing the heavier gold to settle at the bottom. This
+                      technique is commonly used to recover gold from stream
+                      beds, especially in the bends of streams and on the
+                      bedrock shelf, known as placer deposits.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- about image -->
             </div>
           </div>
           <!-- row -->
@@ -178,10 +165,10 @@
     </section>
 
     <div class="d-flex justify-content-between mt-5">
-      <a href="sminingmethods.html" class="text-decoration-none">
+      <a href="aqueous-methods.html" class="text-decoration-none">
         <button class="main-btn wow fadeInUp mx-5">Prev</button>
       </a>
-      <a href="sminingmethods.html" class="text-decoration-none">
+      <a href="sluicing.html" class="text-decoration-none">
         <button class="main-btn wow fadeInUp mx-5">Next</button>
       </a>
     </div>
@@ -223,4 +210,5 @@
   <script src="../assets/js/particles.min.js"></script>
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/home.js"></script>
+  <script src="../assets/js/modal.js"></script>
 </html>
