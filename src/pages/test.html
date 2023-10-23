@@ -1,0 +1,25 @@
+<div class="question-container">
+  <p class="question mt-5"><strong>Question ${currentQuestion + 1}:</strong></p>
+  <p class="question-text m">${selectedQuestions[currentQuestion].question}</p>
+  <div class="form-group">
+    <label for="answer" class="answer-label mt-5">Answer:</label>
+    <input
+      type="text"
+      id="answer"
+      class="form-control"
+      placeholder="Your Answer"
+    />
+  </div>
+  <button id="prev" class="btn btn-secondary mt-5 float-start">
+    Previous Question
+  </button>
+  ${ currentQuestion === selectedQuestions.length - 1 ? `<button
+    id="submit"
+    class="btn btn-primary mt-5 float-end"
+  >
+    Submit</button
+  >` : `<button id="next" class="btn btn-primary mt-5 float-end" disabled>
+    Next Question
+  </button>
+  ` }
+</div>
