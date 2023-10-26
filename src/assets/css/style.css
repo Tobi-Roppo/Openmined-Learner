@@ -2264,3 +2264,19 @@ width: 100%;
 .open-cast-btn:hover {
   background-color: #2980b9; /* Change this color to your preference */
 }
+
+
+
+
+#trivia-card:hover {
+  transform: scale(1.05);
+}
+
+#trivia-card p {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  text-shadow: 4px 4px 8px rgba(255, 230, 0, 0.529); /* Add text glow here */
+  padding-top: 200px;
+}

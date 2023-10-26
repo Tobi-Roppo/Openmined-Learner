@@ -131,7 +131,7 @@ const quizData = [
       <div class="alert ${alertClass} text-center">
         <h3>Your Score: ${userScore}/${totalQuestions}</h3>
         <a class="btn btn-primary mx-3 mt-3" href="quiz2.html">Try Again</a>
-        <a class="btn btn-primary mx 3 mt-3" href="#">Proceed</a>
+        <a class="btn btn-primary mx 3 mt-3" href="dragdrop1.html">Proceed</a>
       </div>`;
   
     // Hide the questions and submit button

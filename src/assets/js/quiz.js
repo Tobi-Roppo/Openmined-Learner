@@ -108,7 +108,7 @@ const quizData = [
     resultContainer.style.display = "block";
     resultContainer.innerHTML = `<div class="score text-center mt-5"><h3>Score:</h3><p>${score}/${selectedQuestions.length}</p></div>
     <button id="tryAgain" class="btn btn-primary mt-5 float-start">Try Again</button>
-    <a href="quarrying-process.html" class="float-end">
+    <a href="quiz1.2.html" class="float-end">
     <button class="btn btn-primary mt-5 float-end">Proceed</button>
     </a>`;
     
